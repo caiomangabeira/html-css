@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format(opentype);
+}
+
+:root {
+    --cor1: #69AFFF;
+    --cor2: #0077FF;
+    --cor3: #2F369C;
+    --cor4: #3A3D51;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-titulo: "Jaro", sans-serif;
+    --fonte-android: 'Android', sans-serif;
+}
+
+* {
+    font-family: var(--fonte-padrao);
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    color: white;
+}
+
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.329);
+}
+
+header > p {
+    font-size: 1.1em;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.329);
+}
+
+nav {
+    background-color: var(--cor4);
+    padding-bottom: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.384);
+}
+
+nav > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor1);
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    text-decoration: underline;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+main {
+    min-width: 500px;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+}
+
+main h1 {
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-family: var(--fonte-android);
+    font-size: 1.2em;
+}
+
+main p {
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
+footer {
+    background-color: var(--cor4);
+    padding: 10px;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+}
